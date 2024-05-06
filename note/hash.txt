@@ -1,0 +1,15 @@
+linear probing -> sau khi mod ra xong thì lưu tại vị trí đó số mod trong mảng 
+(nếu trùng thì số ban đầu +i xong mod đến khi tìm được vị trí trống trong mảng) -> i=1,2,3....
+(hết mảng tự động chạy về mảng 0)
+
+Quadratic -> tương tự như linear nhưng là +i^2
+Ưu điểm:
+Tìm kiếm bậc hai có thể dễ dàng triển khai và hiệu quả trong một số trường hợp.
+Khi bảng băm không quá đầy, và kích thước bảng là số nguyên tố, 
+tìm kiếm bậc hai có thể đảm bảo tìm thấy một vị trí trống một cách hiệu quả và không tìm kiếm lại các vị trí đã kiểm tra.
+
+Nhược điểm:
+Một vấn đề của tìm kiếm bậc hai là các chuỗi probe không tìm kiếm tất cả các vị trí trong bảng băm.
+Điều này có thể dẫn đến hiệu suất tìm kiếm không tốt trong một số trường hợp.
+Có thể xảy ra vấn đề với hiệu suất khi bảng băm quá đầy, 
+khi đó việc tìm kiếm trở nên không hiệu quả và có thể cần phải thực hiện các phép tái băm hoặc tái cấp phát bảng băm.
